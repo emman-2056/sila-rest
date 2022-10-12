@@ -1,0 +1,2 @@
+class RollbarTable < ApplicationRecord
+end

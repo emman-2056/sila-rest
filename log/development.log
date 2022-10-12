@@ -1,0 +1,51 @@
+Started GET "/api/v1/rollbar" for ::1 at 2022-10-12 12:15:17 +0530
+Processing by Api::V1::RollbarController#index as */*
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+  [1m[36mRollbarTable Create (2.1ms)[0m  [1m[32mINSERT INTO "rollbar_tables" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "emman"], ["email", "emman2056@gmail.com"], ["created_at", "2022-10-12 06:45:17.849878"], ["updated_at", "2022-10-12 06:45:17.849878"]]
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+Completed 200 OK in 66ms (Views: 2.4ms | ActiveRecord: 19.1ms | Allocations: 4733)
+
+
+Started GET "/api/v1/rollbar" for ::1 at 2022-10-12 12:15:18 +0530
+Processing by Api::V1::RollbarController#index as */*
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+  [1m[36mRollbarTable Create (0.6ms)[0m  [1m[32mINSERT INTO "rollbar_tables" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "emman"], ["email", "emman2056@gmail.com"], ["created_at", "2022-10-12 06:45:18.842441"], ["updated_at", "2022-10-12 06:45:18.842441"]]
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+Completed 200 OK in 12ms (Views: 1.9ms | ActiveRecord: 4.2ms | Allocations: 1911)
+
+
+Started GET "/api/v1/rollbar" for ::1 at 2022-10-12 12:15:29 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::RollbarController#index as */*
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+  [1m[36mRollbarTable Create (1.4ms)[0m  [1m[32mINSERT INTO "rollbar_tables" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "emman"], ["email", "emman2056@gmail.com"], ["created_at", "2022-10-12 06:45:29.536717"], ["updated_at", "2022-10-12 06:45:29.536717"]]
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/rollbar_controller.rb:16:in `index'
+Completed 200 OK in 56ms (Views: 0.5ms | ActiveRecord: 11.8ms | Allocations: 11849)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-12 15:48:27 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/emmanuel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/emmanuel/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 631)
+Completed 200 OK in 17ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4984)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2022-10-12 15:48:32 +0530
+Processing by Api::V1::UsersController#index as HTML
+Completed 200 OK in 19ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 18509)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-10-12 15:48:34 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
